@@ -37,16 +37,24 @@ db.serialize(() => {
 // In a real deployment, store this securely and do not hardcode.
 const APNS_KEY_ID = process.env.APNS_KEY_ID || 'YOUR_KEY_ID';
 const APNS_TEAM_ID = process.env.APNS_TEAM_ID || 'YOUR_TEAM_ID';
-const APNS_BUNDLE_ID = process.env.APNS_BUNDLE_ID ||cd "c:\Users\HP\OneDrive\Desktop\PROJECT 1\ASSISTANT_AI_prototype\backend"
-npm install
-npm start 'com.example.ASTAI';
+const APNS_BUNDLE_ID = process.env.APNS_BUNDLE_ID || 'com.example.ASTAI';
 const APNS_AUTH_KEY_PATH = process.env.APNS_AUTH_KEY_PATH || './AuthKey.p8';
 
 const TWILIO_ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID || 'YOUR_TWILIO_SID';
 const TWILIO_AUTH_TOKEN = process.env.TWILIO_AUTH_TOKEN || 'YOUR_TWILIO_AUTH_TOKEN';
 const TWILIO_FROM_NUMBER = process.env.TWILIO_FROM_NUMBER || '+15005550006';
 const TWILIO_CALL_URL = process.env.TWILIO_CALL_URL || 'https://your-server.example.com/twilio/voice';
-const twilioClient = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
+let twilioClient = null;
+
+function getTwilioClient() {
+  if (twilioClient) return twilioClient;
+  if (!TWILIO_ACCOUNT_SID.startsWith('AC') || TWILIO_ACCOUNT_SID === 'YOUR_TWILIO_SID' || !TWILIO_AUTH_TOKEN || TWILIO_AUTH_TOKEN === 'YOUR_TWILIO_AUTH_TOKEN') {
+    console.warn('Twilio credentials are not configured; Twilio endpoints are disabled.');
+    return null;
+  }
+  twilioClient = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
+  return twilioClient;
+}
 
 const WA_PHONE_NUMBER_ID = process.env.WA_PHONE_NUMBER_ID || 'YOUR_WHATSAPP_PHONE_NUMBER_ID';
 const WA_API_TOKEN = process.env.WA_API_TOKEN || 'YOUR_WHATSAPP_API_TOKEN';
@@ -384,8 +392,13 @@ app.post('/twilio/make-call', async (req, res) => {
     return res.status(400).json({ error: 'The destination phone number (`to`) is required.' });
   }
 
+  const client = getTwilioClient();
+  if (!client) {
+    return res.status(503).json({ error: 'Twilio is not configured. Set TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN.' });
+  }
+
   try {
-    const call = await twilioClient.calls.create({
+    const call = await client.calls.create({
       url: TWILIO_CALL_URL,
       to,
       from: TWILIO_FROM_NUMBER,
