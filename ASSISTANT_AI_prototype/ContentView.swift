@@ -303,6 +303,10 @@ struct ContentView: View {
             .tabItem {
                 Label("Assistant", systemImage: "sparkles")
             }
+            WhatsAppEventsView()
+                .tabItem {
+                    Label("WhatsApp", systemImage: "message")
+                }
 
             SettingsView()
                 .tabItem {

@@ -23,7 +23,8 @@
 		/* Begin PBXFileReference section */
 		000000000000000000000011 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "App.swift"; path = "App.swift"; sourceTree = "<group>"; };
 		000000000000000000000012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentView.swift"; path = "ContentView.swift"; sourceTree = "<group>"; };
-		000000000000000000000013 /* EventKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EventKitManager.swift"; path = "EventKitManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000013 /* EventKitManager.swift
+		+69*8/rewfqq21`	 */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EventKitManager.swift"; path = "EventKitManager.swift"; sourceTree = "<group>"; };
 		000000000000000000000014 /* EmailClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EmailClient.swift"; path = "EmailClient.swift"; sourceTree = "<group>"; };
 		000000000000000000000015 /* LLMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LLMManager.swift"; path = "LLMManager.swift"; sourceTree = "<group>"; };
 		000000000000000000000016 /* CallKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CallKitManager.swift"; path = "CallKitManager.swift"; sourceTree = "<group>"; };
