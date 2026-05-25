@@ -1,0 +1,13 @@
+Prototype created here by assistant. Open ASTAI.xcodeproj in Xcode.
+
+Files included:
+- App.swift
+- ContentView.swift
+- EventKitManager.swift
+- EmailClient.swift
+- LLMManager.swift
+- CallKitManager.swift
+- PushKitManager.swift
+- Info.plist
+- Info.plist.sample
+- ASTAI.entitlements

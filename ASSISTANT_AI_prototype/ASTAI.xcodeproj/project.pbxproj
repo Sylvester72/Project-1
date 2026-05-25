@@ -1,0 +1,196 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 54;
+	objects = {
+
+		/* Begin PBXBuildFile section */
+		000000000000000000000001 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000011 /* App.swift */; };
+		000000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000012 /* ContentView.swift */; };
+		000000000000000000000003 /* EventKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000013 /* EventKitManager.swift */; };
+		000000000000000000000004 /* EmailClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000014 /* EmailClient.swift */; };
+		000000000000000000000005 /* LLMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* LLMManager.swift */; };
+		000000000000000000000006 /* CallKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* CallKitManager.swift */; };
+		000000000000000000000007 /* PushKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000017 /* PushKitManager.swift */; };
+		000000000000000000000008 /* MailCoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000020 /* MailCoreManager.swift */; };
+		000000000000000000000009 /* SIPProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000021 /* SIPProviderManager.swift */; };
+		00000000000000000000000A /* EmailAccountSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000022 /* EmailAccountSettings.swift */; };
+		00000000000000000000000B /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000023 /* PermissionManager.swift */; };
+		00000000000000000000000C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000024 /* SettingsView.swift */; };
+		/* End PBXBuildFile section */
+
+		/* Begin PBXFileReference section */
+		000000000000000000000011 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "App.swift"; path = "App.swift"; sourceTree = "<group>"; };
+		000000000000000000000012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentView.swift"; path = "ContentView.swift"; sourceTree = "<group>"; };
+		000000000000000000000013 /* EventKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EventKitManager.swift"; path = "EventKitManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000014 /* EmailClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EmailClient.swift"; path = "EmailClient.swift"; sourceTree = "<group>"; };
+		000000000000000000000015 /* LLMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LLMManager.swift"; path = "LLMManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000016 /* CallKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CallKitManager.swift"; path = "CallKitManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000017 /* PushKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PushKitManager.swift"; path = "PushKitManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000020 /* MailCoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MailCoreManager.swift"; path = "MailCoreManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000021 /* SIPProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SIPProviderManager.swift"; path = "SIPProviderManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000022 /* EmailAccountSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EmailAccountSettings.swift"; path = "EmailAccountSettings.swift"; sourceTree = "<group>"; };
+		000000000000000000000023 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PermissionManager.swift"; path = "PermissionManager.swift"; sourceTree = "<group>"; };
+		000000000000000000000024 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsView.swift"; path = "SettingsView.swift"; sourceTree = "<group>"; };
+		000000000000000000000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		000000000000000000000019 /* ASTAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ASTAI.entitlements"; path = "ASTAI.entitlements"; sourceTree = "<group>"; };
+		/* End PBXFileReference section */
+
+		/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000021 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000001,
+				000000000000000000000002,
+				000000000000000000000003,
+				000000000000000000000004,
+				000000000000000000000005,
+				000000000000000000000006,
+				000000000000000000000007,
+				000000000000000000000008,
+				000000000000000000000009,
+				00000000000000000000000A,
+				00000000000000000000000B,
+				00000000000000000000000C,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		/* End PBXSourcesBuildPhase section */
+
+		/* Begin PBXGroup section */
+		000000000000000000000031 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000011,
+				000000000000000000000012,
+				000000000000000000000013,
+				000000000000000000000014,
+				000000000000000000000015,
+				000000000000000000000016,
+				000000000000000000000017,
+				000000000000000000000020,
+				000000000000000000000021,
+				000000000000000000000023,
+				000000000000000000000024,
+				000000000000000000000018,
+				000000000000000000000019,
+			);
+			name = "ASTAI";
+			sourceTree = "<group>";
+		};
+		/* End PBXGroup section */
+
+		/* Begin PBXNativeTarget section */
+		000000000000000000000041 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000051;
+			buildPhases = (
+				000000000000000000000021,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASTAI;
+			productName = ASTAI;
+			productReference = 000000000000000000000061;
+			productType = "com.apple.product-type.application";
+		};
+		/* End PBXNativeTarget section */
+
+		/* Begin PBXProject section */
+		000000000000000000000071 = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1440;
+			};
+			buildConfigurationList = 000000000000000000000081;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000000000000000000000031;
+			productRefGroup = 000000000000000000000031;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000041,
+			);
+		};
+		/* End PBXProject section */
+
+		000000000000000000000061 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ASTAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		000000000000000000000051 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000091,
+				000000000000000000000092,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+
+		000000000000000000000081 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000101,
+				000000000000000000000102,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+
+		000000000000000000000091 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ASTAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ASTAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+
+		000000000000000000000092 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ASTAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ASTAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+
+		000000000000000000000101 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ORGANIZATIONNAME = "Your Organization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+
+		000000000000000000000102 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ORGANIZATIONNAME = "Your Organization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+	};
+
+	rootObject = 000000000000000000000071;
+}
